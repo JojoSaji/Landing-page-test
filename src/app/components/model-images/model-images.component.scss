@@ -1,0 +1,72 @@
+@mixin background-image($image) {
+  background-image: url($image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #F1F6FE;
+  background-image: url(../../../assets/images/bg-pattern.png);
+  width: 425px;
+  height: 613px;
+  border-width: 1px;
+
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero-box {
+  height: 190px;
+  width: 190px;
+  overflow: hidden;
+  padding-left: 0.8rem;
+  border-radius: 1rem;
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  &.square {
+    border-radius: 1rem;
+  }
+
+  &.unique-one {
+    border-radius: 50% 1rem 1rem 50%;
+  }
+
+  &.unique-two {
+    border-radius: 1rem 50% 1rem 1rem;
+  }
+
+}
+
+.model-one {
+  @include background-image('../../../assets/images/model_1.jpg');
+}
+
+.model-two {
+  @include background-image('../../../assets/images/model_2.jpg');
+}
+
+.model-three {
+  @include background-image('../../../assets/images/model_3.jpg');
+}
+
+.model-four {
+  @include background-image('../../../assets/images/model_4.jpg');
+}
+
+.model-five {
+  @include background-image('../../../assets/images/model_5.jpg');
+}
+
+.model-six {
+  @include background-image('../../../assets/images/model_6.jpg');
+}

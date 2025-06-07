@@ -1,0 +1,66 @@
+<div class="landing-container line">
+  <div class="landing-left">
+    <div>
+
+    </div>
+    <header>
+      <div class="logo">
+      </div>
+      <div class="is-logo-text">Hello World!</div>
+      <nav>
+        <a>Course</a>
+        <a>Info</a>
+        <a>Testimonial</a>
+        <a>Categories</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="hero-text">
+        <div class="heading-wrapper">
+          <h1>LEARN GRAPHICS DESIGN FOR LIFE</h1>
+          <div class="is-stared-circle">
+            <div class="is-stared"></div>
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <p>Stay Informed, Stay Ahead: Unveiling the Future of Technology, Gadgets, and Innovation</p>
+          <p>Your Gateway to the Digital Universe - Where Innovation Meets Insight</p>
+        </div>
+
+        <div class="student-info-wrapper">
+          <div class="student-info">
+            <span class="is-quantity">5.1 K</span>
+            <span class="is-text">Students All Over World</span>
+          </div>
+          <div class="avatars">
+            <div class="avatar-one"></div>
+            <div class="avatar-two"></div>
+            <div class="avatar-three"></div>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <button class="primary-btn">Book Your Seat</button>
+          <button class="secondary-btn">
+            <div class="secondary-btn-icon"></div>
+            <span>See Journey</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="landing-stats">
+      <div *ngFor="let stat of statsInfo"
+           class="stat-box">
+        <div>{{stat.value}}</div>
+        <span>{{stat.label}}</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="landing-right">
+    <app-model-images></app-model-images>
+  </div>
+
+</div>
